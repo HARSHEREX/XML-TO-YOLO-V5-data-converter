@@ -6,14 +6,14 @@ import pandas as pd
 import shutil
 import random
 
-data_dir = r'E:\ACXTECH\under dev\NACH_2.0_required_files_and_Data\additional_resources\NachForms_kw_annotations\t2_/'
-save_yolo_format = r'./t2_value_hdb_yolo/'
-validation_ratio = 0.07
+data_dir = r'path to xmls and images'
+save_yolo_format = r'path where to make folder of yolo data'
+validation_ratio = 0.2 # valudation split ratio
 
 try:
     os.mkdir(save_yolo_format)
 except:
-    print(f"\n\n>>>>[WARNING]: directory : '{save_yolo_format}' :> Already Exists")
+    print(f"\n\n>>>>[WARNING]: directory : '{save_yolo_format}' :> Already Exists. values will be duplicated [remove folder manually]")
     
 def convert(size, box):
     dw = 1./size[0]
