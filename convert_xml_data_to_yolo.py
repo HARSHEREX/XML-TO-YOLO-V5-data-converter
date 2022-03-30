@@ -54,8 +54,6 @@ def make_yolo_format(data_dir):
         classes__ = 0
         for class_,xmi,xma,ymi,yma in zip(classes,xmin,xmax,ymin,ymax):
             class_ = class_.text
-            if class_=='refs':
-                class_ = 'ref'
             classes__+=1
             xmi,xma,ymi,yma = [int(i) for i in [xmi.text,xma.text,ymi.text,yma.text]]
             try:
