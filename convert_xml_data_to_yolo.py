@@ -62,8 +62,6 @@ def make_yolo_format(data_dir):
                 label_map[class_] = len(label_map.keys())
                 label = label_map[class_]
             bb.append([label]+convert((w,h), (xmi,xma,ymi,yma)))
-        if classes__!=9:
-            print(real_image_name)
         bbs[real_image_name] = bb
         c+=1
     return bbs,label_map
