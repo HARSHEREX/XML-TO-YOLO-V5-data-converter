@@ -6,8 +6,8 @@ import pandas as pd
 import shutil
 import random
 import time
-data_dir = r'E:\ACXTECH\under dev\KYC\kyc_2.0_data\card field annotations\voter front\clean/'
-save_yolo_format = r'./voter_front_fields/'
+data_dir = "dir_to_xml_data"
+save_yolo_format = r'./save_yolo_format_folder_name/'
 validation_ratio = 0.25
 
 try:
