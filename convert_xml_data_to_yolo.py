@@ -105,7 +105,7 @@ for cc,i in enumerate(items):
 print('Done!!')
 classes_ = list(label_map.keys())
 nc = len(classes_)
-yamlstr = f'''train: ../data/images/train/  \nval: ../data/images/val  \nnc: {nc}  \nnames: {classes_} '''
+yamlstr = f'''train: ../data/images/train/  \nval: ../data/images/val/  \nnc: {nc}  \nnames: {classes_} '''
 try:
     os.remove(save_yolo_format+"cc.yaml")
 except:pass
